@@ -1,0 +1,8 @@
+{
+	local_certs
+}
+
+nextjs.local {
+	tls internal
+	reverse_proxy nextjs:3000
+}
