@@ -1,0 +1,8 @@
+minio_hot_server    = "localhost:9000"
+minio_cold_server   = "localhost:9002"
+minio_cold_internal = "minio-cold:9000"
+minio_user          = "minioadmin"
+minio_password      = "minioadmin"
+minio_region        = "us-east-1"
+bucket_hot          = "app-hot"
+bucket_cold         = "app-cold"
