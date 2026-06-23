@@ -1,0 +1,14 @@
+[Unit]
+Description=S3 Platform Next.js app
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/s3-platform/nextjs
+EnvironmentFile=/opt/s3-platform/.env
+ExecStart=/usr/bin/npm run start
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
